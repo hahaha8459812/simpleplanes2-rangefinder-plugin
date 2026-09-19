@@ -88,8 +88,6 @@ Parameter letters are case-insensitive. A value outside the range is replaced by
 | Ray hits | distance in metres |
 | Nothing within the ray length | the ray length |
 
-A hit at the ray length boundary and no hit at all give the same value.
-
 ### Referencing it in an expression
 
 The variable name is the part of the part name before the first `.`: the part name `RF_left.r5.m500` gives the variable name `RF_left`.
@@ -176,8 +174,6 @@ Parameter letters are case-insensitive. A value outside the range is replaced by
 |---|---|---|
 | Nothing in the ray | 1 | 1 |
 | Something in the ray | 0 | `distance / ray length` |
-
-In binary mode any hit can be told apart from nothing being there; in linear mode a hit at the ray length boundary and no hit at all give the same value.
 
 ### Referencing it in an expression
 
