@@ -50,8 +50,6 @@ In the designer, select a refuel probe part and set its **part name** in the par
 RF_left
 ```
 
-The part type must be `Refuel-Probe-1` (configurable through `PartTypeId`). Renaming a part of another type only gets the part skipped, with a type warning in the log.
-
 The variable name is the part of the part name before the first `.` (prefix included), with surrounding spaces removed. It may only contain letters, digits and underscores, and may not start with a digit; otherwise the part is skipped and a warning is logged. Prefix matching is case-sensitive. A part name that is only a prefix (`RF_` or `RF_.r5`) gets the whole part skipped and a warning logged.
 
 The output is the distance from the probe to whatever it hits, in metres.
@@ -133,8 +131,6 @@ In the designer, select a refuel probe part and set its **part name** in the par
 ```text
 SN_beam
 ```
-
-The part type must be `Refuel-Probe-1` (configurable through `PartTypeId`). Renaming a part of another type only gets the part skipped, with a type warning in the log.
 
 The variable name is the part of the part name before the first `.` (prefix included), with surrounding spaces removed. It may only contain letters, digits and underscores, and may not start with a digit; otherwise the part is skipped and a warning is logged. Prefix matching is case-sensitive. A part name that is only a prefix (`SN_` or `SN_.r5`) gets the whole part skipped and a warning logged.
 
