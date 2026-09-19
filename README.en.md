@@ -6,7 +6,25 @@ Uses refuel probe parts as laser rangefinders and presence sensors. Their output
 
 ## Installation
 
-Requires a working BepInEx 5 Mono x64 setup. The release package does not bundle BepInEx.
+### Installing BepInEx
+
+The release package does not bundle BepInEx. If you already have BepInEx 5 set up, skip to "Installing this plugin".
+
+This plugin is tested on BepInEx 5.4.23.5 (Mono x64); use a [BepInEx 5.4.x build](https://github.com/BepInEx/BepInEx/releases). Download [BepInEx_win_x64_5.4.23.5.zip](https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip) and extract it into the game root, the folder containing `SimplePlanes 2.exe`:
+
+```text
+SimplePlanes 2\
+├─ winhttp.dll
+├─ doorstop_config.ini
+├─ .doorstop_version
+└─ BepInEx\
+```
+
+Launch the game once and quit; `BepInEx\plugins\` and `BepInEx\config\` are created automatically.
+
+### Installing this plugin
+
+Put `SimplePlanes2Rangefinder.dll` in any subfolder of `BepInEx\plugins\`; the convention is one folder per plugin:
 
 ```text
 SimplePlanes 2\
@@ -16,7 +34,7 @@ SimplePlanes 2\
          └─ SimplePlanes2Rangefinder.dll
 ```
 
-The config file is created on first launch:
+The game must be closed while installing: the DLL is locked while it runs. The config file is created on first launch:
 
 ```text
 BepInEx\config\com.codex.simpleplanes2.rangefinder.cfg

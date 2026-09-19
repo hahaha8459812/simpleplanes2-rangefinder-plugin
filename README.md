@@ -6,7 +6,25 @@
 
 ## 安装
 
-需要可用的 BepInEx 5 Mono x64 环境。发布包不含 BepInEx。
+### 安装 BepInEx
+
+发布包不含 BepInEx，需要单独安装。已经装好 BepInEx 5 的话，跳到「安装本插件」。
+
+本插件在 BepInEx 5.4.23.5（Mono x64）上测试过，请使用 [5.4.x 版本的 BepInEx](https://github.com/BepInEx/BepInEx/releases)。下载 [BepInEx_win_x64_5.4.23.5.zip](https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip)，解压到游戏根目录，也就是 `SimplePlanes 2.exe` 所在的目录：
+
+```text
+SimplePlanes 2\
+├─ winhttp.dll
+├─ doorstop_config.ini
+├─ .doorstop_version
+└─ BepInEx\
+```
+
+启动一次游戏再退出，`BepInEx\plugins\` 与 `BepInEx\config\` 会自动生成。
+
+### 安装本插件
+
+把 `SimplePlanes2Rangefinder.dll` 放到 `BepInEx\plugins\` 下的任意子目录，约定一个插件一个目录：
 
 ```text
 SimplePlanes 2\
@@ -16,7 +34,7 @@ SimplePlanes 2\
          └─ SimplePlanes2Rangefinder.dll
 ```
 
-配置文件在首次启动时生成：
+安装时游戏必须关闭：运行时这个 DLL 被占用。配置文件在首次启动时生成：
 
 ```text
 BepInEx\config\com.codex.simpleplanes2.rangefinder.cfg
