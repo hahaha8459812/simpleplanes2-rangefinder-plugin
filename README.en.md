@@ -66,7 +66,7 @@ RF_left.r5.m500.c1
 |---|---|---|---|
 | `r<n>` | measurements per second | 0.1 – 120 | 10 per second |
 | `m<n>` | ray length, metres | 1 – 1000000 | 100000 metres |
-| `c<0\|1>` | whether to hide own-aircraft collision boxes | 0 or 1 | 1, hidden |
+| `c<0\|1>` | whether to hide own-aircraft collision boxes | 0 not hidden, 1 hidden | 1, hidden |
 
 Parameter letters are case-insensitive. A value outside the range is replaced by the nearest bound for `r` and `m`, so `r500` is treated as 120; `c` accepts only 0 and 1, and any other value is logged as a warning and ignored, leaving the omitted behaviour in place. Parameters may all be omitted, partially omitted, or written in any order; when the same parameter is written twice, the last one wins. An empty parameter segment and an unrecognised parameter are each logged as a warning and ignored, leaving the rest of the rangefinder unaffected. `t` only applies to sensors; on a rangefinder it is ignored with a warning.
 
@@ -79,7 +79,7 @@ Parameter letters are case-insensitive. A value outside the range is replaced by
 | `RF_left.m1000` | 1000 m ray |
 | `RF_left.c0` | Own-aircraft collision boxes not hidden |
 | `RF_left.m500.r5` | Same as `RF_left.r5.m500`; order does not matter |
-| `RF_left.r5.m500.c1` | All three parameters written out |
+| `RF_left.r5.m500.c1` | 5 per second, 500 m ray, own-aircraft collision boxes hidden |
 
 ### Output values
 
@@ -88,7 +88,7 @@ Parameter letters are case-insensitive. A value outside the range is replaced by
 | Ray hits | distance in metres |
 | Nothing within the ray length | the ray length |
 
-A hit exactly at the ray length boundary and nothing at all produce the same value and cannot be told apart.
+A hit at the ray length boundary and no hit at all give the same value.
 
 ### Referencing it in an expression
 
@@ -155,7 +155,7 @@ SN_beam.t2.m50
 |---|---|---|---|
 | `r<n>` | measurements per second | 0.1 – 120 | 10 per second |
 | `m<n>` | ray length, metres | 1 – 1000000 | 100000 metres |
-| `c<0\|1>` | whether to hide own-aircraft collision boxes | 0 or 1 | 1, hidden |
+| `c<0\|1>` | whether to hide own-aircraft collision boxes | 0 not hidden, 1 hidden | 1, hidden |
 | `t<1\|2>` | output mode | 1 binary, 2 linear | 1 |
 
 Parameter letters are case-insensitive. A value outside the range is replaced by the nearest bound for `r` and `m`, so `r500` is treated as 120; `c` accepts only 0 and 1 and `t` only 1 and 2, and any other value is logged as a warning and ignored, leaving the omitted behaviour in place. Parameters may all be omitted, partially omitted, or written in any order; when the same parameter is written twice, the last one wins. An empty parameter segment and an unrecognised parameter are each logged as a warning and ignored, leaving the rest of the sensor unaffected.
@@ -177,7 +177,7 @@ Parameter letters are case-insensitive. A value outside the range is replaced by
 | Nothing in the ray | 1 | 1 |
 | Something in the ray | 0 | `distance / ray length` |
 
-In binary mode anything in the ray gives 0, so every hit can be told apart from nothing being there. In linear mode a hit exactly at the ray length boundary and nothing at all produce the same value and cannot be told apart.
+In binary mode any hit can be told apart from nothing being there; in linear mode a hit at the ray length boundary and no hit at all give the same value.
 
 ### Referencing it in an expression
 
