@@ -1,0 +1,19 @@
+# build outputs
+artifacts/
+release/
+.ci-deps/
+
+# local research and temporary dumps
+tmp/
+
+# local development documents and machine-private paths (never tracked)
+local/
+
+# local runtime logs
+*.log
+
+# editor files
+.vs/
+.vscode/
+*.user
+*.suo

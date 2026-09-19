@@ -1,0 +1,14 @@
+{
+  "id": "simpleplanes2-rangefinder",
+  "name": "SimplePlanes 2 Rangefinder",
+  "version": "0.1.0",
+  "description": "Named-part rangefinder and presence sensor that publish their readings as Funky Trees variables.",
+  "fileName": "SimplePlanes2Rangefinder-Release.zip",
+  "downloadUrl": "https://github.com/hahaha8459812/simpleplanes2-rangefinder-plugin/releases/download/v0.1.0/SimplePlanes2Rangefinder-Release.zip",
+  "repository": "https://github.com/hahaha8459812/simpleplanes2-rangefinder-plugin",
+  "entryDll": "BepInEx/plugins/SimplePlanes2Rangefinder/SimplePlanes2Rangefinder.dll",
+  "pluginDirectory": "BepInEx/plugins/SimplePlanes2Rangefinder",
+  "configFiles": [
+    "BepInEx/config/com.codex.simpleplanes2.rangefinder.cfg"
+  ]
+}
