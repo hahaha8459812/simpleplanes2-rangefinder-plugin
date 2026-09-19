@@ -24,7 +24,7 @@ Launch the game once and quit; `BepInEx\plugins\` and `BepInEx\config\` are crea
 
 ### Installing this plugin
 
-Put `SimplePlanes2Rangefinder.dll` in any subfolder of `BepInEx\plugins\`; the convention is one folder per plugin:
+Download `SimplePlanes2Rangefinder-Release.zip` from the [releases page](https://github.com/hahaha8459812/simpleplanes2-rangefinder-plugin/releases/latest) and put `SimplePlanes2Rangefinder.dll` in any subfolder of `BepInEx\plugins\`; the convention is one folder per plugin:
 
 ```text
 SimplePlanes 2\

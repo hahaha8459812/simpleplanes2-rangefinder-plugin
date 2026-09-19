@@ -24,7 +24,7 @@ SimplePlanes 2\
 
 ### 安装本插件
 
-把 `SimplePlanes2Rangefinder.dll` 放到 `BepInEx\plugins\` 下的任意子目录，约定一个插件一个目录：
+从 [发布页](https://github.com/hahaha8459812/simpleplanes2-rangefinder-plugin/releases/latest) 下载 `SimplePlanes2Rangefinder-Release.zip`，解压后把 `SimplePlanes2Rangefinder.dll` 放到 `BepInEx\plugins\` 下的任意子目录，约定一个插件一个目录：
 
 ```text
 SimplePlanes 2\
