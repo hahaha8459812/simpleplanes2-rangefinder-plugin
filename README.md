@@ -40,20 +40,6 @@ SimplePlanes 2\
 BepInEx\config\com.codex.simpleplanes2.rangefinder.cfg
 ```
 
-## 配置
-
-| 键 | 默认值 | 作用 |
-|---|---|---|
-| `General / Enabled` | `true` | 总开关。关闭时不更新数值，并把已注册的变量写成各自的"射线内没有东西"取值。 |
-| `General / PartNamePrefix` | `RF_` | 测距仪零件名的前缀，区分大小写。留空表示不识别测距仪。 |
-| `General / SensorNamePrefix` | `SN_` | 感应器零件名的前缀，区分大小写。与测距仪前缀相同时，零件按感应器处理。留空表示不识别感应器。 |
-| `General / PartTypeId` | `Refuel-Probe-1` | 被当作测距仪或感应器的零件类型 ID。 |
-| `General / LogLevel` | `Normal` | 日志级别。`Off` 完全不输出插件日志；`Normal` 输出加载、注册、失败与警告；`Verbose` 额外输出每个零件的识别过程与线程信息。 |
-| `Rangefinder / DefaultRefreshHz` | `10` | 零件名没写 `r` 参数时的刷新率，单位 Hz。 |
-| `Rangefinder / DefaultMaxDistance` | `100000` | 零件名没写 `m` 参数时的射线长度，单位米。 |
-| `Rangefinder / IgnoreOwnAircraft` | `true` | 零件名没写 `c` 参数时，是否隐藏同载具碰撞箱。 |
-| `Rangefinder / OnlyUpdateLocalPlayer` | `false` | 只更新本机载具的变量。被跳过的载具写成各自的"射线内没有东西"取值。 |
-
 ---
 
 ## 测距仪

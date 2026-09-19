@@ -40,20 +40,6 @@ The game must be closed while installing: the DLL is locked while it runs. The c
 BepInEx\config\com.codex.simpleplanes2.rangefinder.cfg
 ```
 
-## Configuration
-
-| Key | Default | Effect |
-|---|---|---|
-| `General / Enabled` | `true` | Master switch. While off, values are not updated and every registered variable is set to its own no-hit value. |
-| `General / PartNamePrefix` | `RF_` | Prefix of a rangefinder part name, case-sensitive. Empty means no part is treated as a rangefinder. |
-| `General / SensorNamePrefix` | `SN_` | Prefix of a sensor part name, case-sensitive. When it equals the rangefinder prefix, such parts are treated as sensors. Empty means no part is treated as a sensor. |
-| `General / PartTypeId` | `Refuel-Probe-1` | Part type ID that is treated as a rangefinder or a sensor. |
-| `General / LogLevel` | `Normal` | Log verbosity. `Off` emits no plugin log output at all; `Normal` logs loading, registration, failures and warnings; `Verbose` additionally logs each part's recognition and thread information. |
-| `Rangefinder / DefaultRefreshHz` | `10` | Refresh rate in Hz when the part name has no `r` parameter. |
-| `Rangefinder / DefaultMaxDistance` | `100000` | Ray length in metres when the part name has no `m` parameter. |
-| `Rangefinder / IgnoreOwnAircraft` | `true` | Whether own-aircraft collision boxes are hidden when the part name has no `c` parameter. |
-| `Rangefinder / OnlyUpdateLocalPlayer` | `false` | Update only the local player's aircraft. Skipped aircraft have their variables set to their own no-hit values. |
-
 ---
 
 ## Rangefinder
