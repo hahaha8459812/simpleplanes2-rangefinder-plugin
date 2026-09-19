@@ -54,7 +54,7 @@ The part type must be `Refuel-Probe-1` (configurable through `PartTypeId`). Rena
 
 The variable name is the part of the part name before the first `.` (prefix included), with surrounding spaces removed. It may only contain letters, digits and underscores, and may not start with a digit; otherwise the part is skipped and a warning is logged. Prefix matching is case-sensitive. A part name that is only a prefix (`RF_` or `RF_.r5`) gets the whole part skipped and a warning logged.
 
-The output is the distance from the probe to whatever it hits, in metres. It is about 0.01 metres at short range; at long range floating-point precision is coarser than that.
+The output is the distance from the probe to whatever it hits, in metres.
 
 ### Parameters
 
@@ -218,6 +218,14 @@ SN_beam
 ### Scope
 
 Variables belong to the aircraft they are on. A probe on one aircraft only affects that aircraft's expressions.
+
+---
+
+## Known limitations
+
+- Measurements are rate-limited by `r`; they are not taken every frame.
+- About 0.01 metres of precision at short range; at long range floating-point precision is coarser than that.
+- Only tested in single player; multiplayer is unverified.
 
 ---
 
